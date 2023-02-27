@@ -1,8 +1,7 @@
 import React from "react";
 
 function Header() {
-  const border =
-    "border-solid text-gray-200 cursor-pointer border-2 border-grey-400 rounded-lg mx-2 px-2";
+  const border = "text-gray-200 cursor-pointer mx-2 px-2";
   return (
     <header className="sticky top-0">
       <div className="flex flex-row flex-wrap justify-around bg-indigo-900 px-10 py-3">
