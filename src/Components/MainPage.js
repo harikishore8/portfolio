@@ -1,5 +1,9 @@
 import React, { Fragment } from "react";
 import Header from "./Header";
+import prg from "../Assets/prg.jpg";
+import gith from "../Assets/github.png";
+import gm from "../Assets/gmail.png";
+import li from "../Assets/linkedin.png";
 
 function MainPage() {
   return (
@@ -22,22 +26,29 @@ function MainPage() {
               I am always eager to learn new skills and technologies to improve
               my abilities.
             </p>
-            {/* <div>
-              <a
-                href="https://www.flaticon.com/free-icons/gmail"
-                title="gmail icons"
-              >
-                Gmail
+            <div className="flex flex-row w-auto mt-4">
+              <a href="https://github.com/harikishore8">
+                <img
+                  className="w-1/3 mx-2 h-auto"
+                  src={gith}
+                  alt="Github"
+                ></img>
               </a>
-            </div> */}
+              <a href="harikishore.ct20@bitsathy.ac.in">
+                <img className="w-1/3 mx-2 h-auto" src={gm} alt="Gmail"></img>
+              </a>
+              <a href="https://www.linkedin.com/in/harikishore8/">
+                <img
+                  className="w-1/3 mx-2 h-auto"
+                  src={li}
+                  alt="Linkedin"
+                ></img>
+              </a>
+            </div>
           </div>
         </div>
         <div className="w-1/2 flex justify-center items-center">
-          <img
-            className="h-48"
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F3213828%2Fscreenshots%2F6612869%2Fmclarenf1800x600.gif&f=1&nofb=1&ipt=029b998d72f794bb6d02c7c7d4b1c4c748f1af0c170e9576d391098c9d422c28&ipo=images"
-            alt="img"
-          ></img>
+          <img className="h-auto w-auto" src={prg} alt="img"></img>
         </div>
       </div>
     </Fragment>
